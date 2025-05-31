@@ -47,7 +47,7 @@ body {
   bottom: 0;
   background-color: #dfdfdf;
   transition: 0.4s;
-  box-shadow: 1px 1px 15px 0 #929191 inset, inset -4px 4px 15px 0 #ffffff;
+  box-shadow: 3px 3px 15px 0 #6e6d6d inset, inset -3px -3px 15px 0 #ffffff;
 }
 
 .slider:before {
@@ -59,13 +59,13 @@ body {
   bottom: 10px;
   background-color: #1d59fe;
   transition: 0.6s;
-  box-shadow: inset 2px 2px 10px 0px #ecf0fe;
+  box-shadow: inset 3px 3px 12px 0px #ecf0fe;
 }
 
 .checkbox:checked + .slider:before {
   transform: translateX(80px);
   background-color: #1d59fe;
-  box-shadow: inset -1px 1px 10px 0px #ecf0fe;
+  box-shadow: inset -3px 3px 12px 0px #ecf0fe;
 }
 
 .slider.round {

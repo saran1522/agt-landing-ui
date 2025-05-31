@@ -106,7 +106,7 @@ export default function Home() {
           <div className="absolute bottom-0 left-0 right-0 -top-11 bg-[linear-gradient(to_right,#a6b1e17A_1px,transparent_1px),linear-gradient(to_bottom,#a6b1e17A_1px,transparent_1px)] bg-[size:55px_55px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_40%,transparent_110%)]"></div>
           <SectionWrapper
             title="Everything you need to protect & secure sensitive data in your SaaS apps"
-            text="Metonic solutions"
+            text="Metomic solutions"
             className="text-white"
           >
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

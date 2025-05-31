@@ -18,7 +18,11 @@ export default function FeatureCard({ title, icon }: FeatureCardProps) {
     >
       <Image src={icon} alt={`${title} icon`} width={20} height={24} />
       <div className="space-y-4">
-        <h4 className={`font-medium text-[#444444] ${montserrat.className}`}>
+        <h4
+          className={`font-medium ${montserrat.className} ${
+            icon === "/feature1.svg" ? "text-[#316BFF]" : "text-[#444444]"
+          }`}
+        >
           {title}
         </h4>
         {icon === "/feature1.svg" && (
