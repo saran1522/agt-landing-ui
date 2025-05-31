@@ -1,5 +1,9 @@
 import Image from "next/image";
-import { montserrat } from "../layout";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+});
 interface FeatureCardProps {
   title: string;
   icon: string;

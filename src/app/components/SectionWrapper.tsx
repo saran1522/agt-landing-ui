@@ -1,7 +1,11 @@
 import React from "react";
 import BoltText from "./BoltText";
 import Image from "next/image";
-import { montserrat } from "../layout";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+});
 
 function SectionWrapper({
   title,
