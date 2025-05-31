@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 70px;
+}
+
+.switch .checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #dfdfdf;
+  transition: 0.4s;
+  box-shadow: 1px 1px 15px 0 #929191 inset, inset -4px 4px 15px 0 #ffffff;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 50px;
+  left: 10px;
+  bottom: 10px;
+  background-color: #1d59fe;
+  transition: 0.6s;
+  box-shadow: inset 2px 2px 10px 0px #ecf0fe;
+}
+
+.checkbox:checked + .slider:before {
+  transform: translateX(80px);
+  background-color: #1d59fe;
+  box-shadow: inset -1px 1px 10px 0px #ecf0fe;
+}
+
+.slider.round {
+  border-radius: 70px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.hidescroll::-webkit-scrollbar {
+  display: none;
+}
